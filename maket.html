@@ -1,0 +1,566 @@
+﻿<link href='https://fonts.googleapis.com/css?family=Lobster|Abril+Fatface' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+<style>
+*{
+box-sizing:border-box;}
+body{
+	background:lightgrey;
+	background-size:100%;
+}
+.header{
+display:block;
+clear:both;
+position:relative;
+}
+.logo img{
+width:75px;}
+.logo{list-style:none;float:left;}
+#menu li{
+float:left;
+
+padding:20px;
+background:#333;border-right:2px solid black;
+text-align:center;
+font-size:14pt;
+vertical-align:bottom;
+}
+#menu a{
+	color:white;
+	vertical-align:bottom;
+	text-align:center;
+	text-decoration:none;
+}
+.active_li{
+	border-bottom:3px solid orange;
+	color:orange;
+}
+#menu li:hover{
+	border-bottom:3px solid orange;
+	color:orange;
+}
+#first{
+	clear:both;
+	top:10px;
+	width:100%;
+	position:relative;
+	/*border:1px solid #333;*/
+	box-sizing:border-box;
+}
+#first .left , #main left{
+float:left;width:50%;
+/*border:1px solid orange;*/
+}
+#first .left input {
+width:100%;
+font-size:14pt;
+outline:none;
+padding:10px;
+font-family:Cursive , Arial;
+border:2px solid #BDBDBD;
+padding-right:60px;
+}
+#clear_search{
+position:absolute;
+right:-5px;
+width:50px;
+bottom:0;
+}
+#first .right{
+float:right;
+width:50%;
+}
+#search{
+position:relative;}
+.facebook{
+background:url(preview1.png) no-repeat -10px -12px;
+
+}
+.twitter{
+background:url(preview1.png) no-repeat -65px -12px;
+}
+.googlep{
+background:url(preview1.png) no-repeat -115px -12px;
+}
+.soz{
+float:left;
+padding-left:55px;
+list-style:none;
+margin-right:65px;
+width:10px;
+padding-top:15px;
+height:50px;
+}
+
+#first .right a{
+color:black;
+}
+#second , #third , #main , #statistic{
+	clear:both;
+	top:10px;
+	width:100%;
+	position:relative;
+	box-sizing:border-box;
+}
+#news{
+width:100%;
+border:2px solid #333;
+box-sizing:border-box;
+position:relative;
+top:10px;
+overflow:hidden;
+}
+.new{
+float:left;
+display:inline-block;
+position:relative;
+}
+.new img{
+width:50%;
+display:inline;
+height:300px;
+position:relative;}
+.content{
+float:right;
+width:50%;
+background:#333;
+height:300px;
+text-align:center;
+}
+.content h1{
+color:white;
+}
+h1{
+margin-top:0;
+}
+.content p{
+color:white;}
+.new .title{
+position:absolute;
+left:0;
+bottom:0;
+background:#333;
+padding:15px;
+opacity:0.8;
+color:white;
+}
+#navigation{
+position:absolute;
+bottom:0px;
+right:0;
+z-index:1000;
+color:white;
+}
+#navigation a{
+color:white;
+text-decoration:none;
+font-size:15pt;
+background:#2E2E2E;
+padding:0px 10px;
+}
+#third{
+top:30px;}
+#third .user{
+transition:0.1s linear all;
+float:left;
+display:block;
+margin-right:12px;
+width:230px;
+position:relative;
+display:block;
+max-height:500px;
+}
+#third .user:hover{
+	outline:5px solid #333;
+}
+#third .user>img{
+width:100%;
+text-align:center;
+height:200px;
+position:relative;
+}
+.bio{
+width:100%;
+overflow:hidden;
+box-sizing:padding-box;
+height:200px;
+padding:5px;
+background:white;
+color:#333;
+font-family:Cursive , Arial , Montana;
+font-style:italic;
+}
+.to_subscribe{
+position:absolute;
+display:block;
+right:0px;
+top:0px;
+z-index:3000;
+/*background:orange;*/
+background:#333;
+border-radius:20px;
+width:40px;
+height:40px;
+padding-top:6px;
+text-align:center;
+text-shadow:3px 3px 10px black;
+}
+.to_subscribe a{
+text-decoration:none;
+color:white;
+font:bold 18pt bold;}
+/*.user:after{
+content:'';
+position:absolute;
+right:0;
+top:0;
+border-bottom:50px solid transparent;
+border-right:50px solid orange;
+}*/
+.user h1{
+margin-bottom:0;}
+#news{
+width:955px !important;}
+.header , h1{
+font-family: 'Lobster', cursive !important;}
+p{
+font-family: 'Ubuntu', sans-serif !important;
+}
+#main{
+top:30px;
+}
+#main .left{
+background:white;
+top:10px;
+position:relative;
+width:70%;
+}
+#main .left h1{
+top:10px;
+}
+#main .left .new{
+padding:10px;
+box-sizing:padding-box;
+text-align:center;
+background:white;
+margin-top:10px;
+border-bottom:2px solid #333;
+position:relative;
+}
+#main .left .new .footer{
+width:100%;
+font:bold 13pt bold;
+font-family: 'Lobster', cursive !important;}
+
+#main .left .new .footer .comments{
+float:left;}
+#main .left .new .footer .likes{
+float:right;
+color:#333;
+text-align:left;
+border:2px solid pink;
+width:150px;}
+#main .left .new .footer .likes img , #main .left .new .footer .comments img{
+height:20px;
+float:left;
+width:20px;}
+#main .left .new .add_new{
+transition:1s linear all;
+z-index:3000;
+background:#333;
+border-radius:20px;
+width:40px;
+height:40px;
+padding-top:6px;
+text-align:center;
+color:white;
+font:bold 18pt bold;
+text-shadow:3px 3px 10px black;
+}
+#main .right{
+top:15px;
+float:right;
+position:relative;
+width:25%;
+right:35px;
+}
+#main .right a{
+color:black;
+text-decoration:none;
+}
+
+#main .right  li{
+list-style:none;
+margin:0;
+transition:0.1s linear all;
+width:100%;
+background:white;
+padding:10px;
+font:bold 15pt bold;
+margin-top:5px;
+}
+#main .right li:hover{
+border-right:5px solid #333;box-sizing:border-box;border-left:5px solid #333;}
+#main .right  li a{
+color:#333;
+text-decoration:none;
+}
+.big_man{
+background:white;top:5px;position:relative;padding:10px;margin-bottom:10px;}
+.big_man sub{
+position:absolute;
+right:0;
+bottom:0;
+font-weight:bold;
+}
+*{
+	transition:0.1s linear all;
+}
+.left .new:hover{
+	outline:5px solid #333;
+}
+#statistic{
+position:relative;
+top:50px;
+text-align:center;
+width:97%;
+background:white;
+height:750px;
+border-left:5px solid #333;
+border-bottom:5px solid #333;
+border-right:5px solid black;
+border-top:5px solid black;
+box-sizing:border-box;
+}
+#grahpic{
+	margin-left:20px;
+}
+#grahpic .left{
+	float:left;
+}
+*{
+	transition:0.2s linear all;
+}
+.value{
+	position:absolute;
+	bottom:-20px;
+}
+.subscribe_email input{
+	width:100%;
+}
+</style>
+<div class="header">
+<li class="logo"><a href=""><img src="logo.png"></a></li> 
+<ul id="menu">
+
+<a href=""><li class="logo active_li">Новости</li></a>
+<a href=""><li class="logo">Новости</li></a>
+<a href=""><li class="logo">Гостевая книга</li></a>
+<a href=""><li class="logo">Гостевая книга</li></a>
+<a href=""><li class="logo">Гостевая книга</li></a>
+<a href=""><li class="logo">Гостевая книга</li></a>
+</ul>
+</div>
+<div id="first">
+<div class="left"><div id="search"><input type="text" name="search" id="search" placeholder="Поиск.."><div id="clear_search"><img  width="100%" src="http://www.iconsearch.ru/uploads/icons/minimal/64x64/gtk-close.png"></div>
+</div>
+</div>
+<div class="right">
+<a href="https://facebook.com"  target="_blank"><li class="facebook soz">Facebook</li></a>
+<a href="https://twitter.com" target="_blank"><li class="twitter soz" >Twitter</li></a>
+<a href="https://google.com" target="_blank"><li class="googlep soz" >Google+</li></a>
+</div>
+
+</div>
+<div id="second">
+<div id="news">
+
+<div class="new">
+<img src="http://re-actor.net/uploads/posts/2011-03/1299902869_millenium3.jpg">
+<div class="title">Заголовок новости1</div>
+<div class="content">
+<h1>Заголовок новости1</h1>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum...
+</p>
+</div>
+</div>
+
+
+<div id="navigation"><a href="#" id="a_left">&lt;</a>&nbsp;<a href="#" id="a_right">&gt;</a></div>
+</div>
+</div>
+<div id="third">
+<div class="user">
+<div class="to_subscribe"><a href="#" class="subscribe">+</a></div>
+<img src="http://ru.best-wallpaper.net/wallpaper/2560x1600/1202/Villa-house-palm-trees-and-swimming-pool_2560x1600.jpg">
+
+<div class="bio">
+<h1>Заголовок2</h1>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+</p>
+</div>
+</div>
+<div class="user">
+<div class="to_subscribe"><a href="#" class="subscribe">+</a></div>
+<img src="http://ru.best-wallpaper.net/wallpaper/2560x1600/1202/Villa-house-palm-trees-and-swimming-pool_2560x1600.jpg">
+
+<div class="bio">
+<h1>Заголовок2</h1>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+</p>
+</div>
+</div>
+<div class="user">
+<div class="to_subscribe"><a href="#" class="subscribe">+</a></div>
+<img src="http://ru.best-wallpaper.net/wallpaper/2560x1600/1202/Villa-house-palm-trees-and-swimming-pool_2560x1600.jpg">
+
+<div class="bio">
+<h1>Заголовок2</h1>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+</p>
+</div>
+</div>
+<div class="user">
+<div class="to_subscribe"><a href="#" class="subscribe">+</a></div>
+<img src="http://ru.best-wallpaper.net/wallpaper/2560x1600/1202/Villa-house-palm-trees-and-swimming-pool_2560x1600.jpg">
+
+<div class="bio">
+<h1>Заголовок2</h1>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="main">
+<div class="right">
+<div class="big_man">
+<h1>Фразы великих</h1>
+<p>Не ошибаеться тот, кто ничего не делает.</p>
+<sub>Денис Тымчук</sub>
+</div>
+<a href="#"><li>Категория</li></a>
+<a href="#"><li>Категория</li></a>
+<a href="#"><li>Категория</li></a>
+<a href="#"><li>Категория</li></a>
+<br>
+<div class="big_man">
+<h1>Подписка</h1>
+<input type="email_notification" id="email_notification" placeholder="Ваш емейл">
+<button id="submit_before">Оформить подписку</button>
+</div>
+</div>
+
+<div class="left">
+
+<div class="new">
+<div class="add_new">+</div>
+<h1>Заголовок статьи 1</h1>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+</p>
+<div class="footer">
+<div class="likes">
+<img src="heart (1).png">220
+</div>
+<div class="comments">
+23<img src="rupor.png">
+</div>
+</div>
+</div>
+
+<div class="new">
+<div class="add_new">+</div>
+<h1>Заголовок статьи 1</h1>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+</p>
+</div>
+
+</div>
+
+
+</div>
+<div id="statistic">
+<h1>Стастикика сайта</h1>
+<div id="grahpic">
+<div class="left">
+</div>
+</div>
+</div>
+<!--
+Физический адрес: 90-A4-DE-F5-0D-66
+IP-адрес: 192.168.1.101
+Маска подсети: 255.255.255.0
+Основной шлюз: 192.168.1.1
+DHCP-сервер: 192.168.1.1
+Аренда получена: 12.06.2016 20:01:24
+Аренда истекает: 12.06.2016 22:01:24
+DNS-сервер: 192.168.1.1
+WINS-сервер: 
+-->
+
+<script>
+var aas = document.getElementsByClassName("subscribe");
+for (i=0;i<aas.length;i++){
+		aas[i].onclick = function(){
+		if (this.innerHTML != "+"){
+		return false;}
+			alert("Добавлено");
+			this.innerHTML = "&#10003;";
+			return false;
+		}
+}
+var search = document.getElementById("search");
+clear_search.onclick = function(){
+	search.value = "";
+}
+height = 600;
+width = 900;
+width-=50;
+var data =[2300 , 1000 , 6000 , 10000 , 4000 , 25000]
+
+var month =["September"  , "August" , "March" , "May" , "July" , "June"]
+var value="users"
+var max  = -1000
+for (i=0;i<data.length;i++){
+	if (data[i]>max){max = data[i]}
+}
+var grahpic = document.getElementById("grahpic");
+var size = height / max;
+var barWidth = Math.floor(width / data.length);
+var left = grahpic.getElementsByClassName("left")[0];
+for(i=0;i<data.length;i++){
+	div = document.createElement("div");
+	div.style.height = size*data[i];
+	div.style.width = barWidth -5;
+	div.style.position = "absolute";
+	div.style.left = barWidth * i + 60 + "px";
+	div.style.bottom = 18;
+	div.style.marginLeft = 2;
+	div.style.background = "#333";
+	div.setAttribute("title" , data[i] + " " + value);
+	div.setAttribute("id" , "i" + i);
+	div2 = document.createElement("div");
+	div2.innerHTML = data[i];
+	div2.style.position = "absolute";
+	div2.style.bottom = size*data[i];
+	div2.setAttribute("class" , "i" + i);
+	div2.setAttribute("title" , data[i] + " " + value);
+	div2.onmousemove = function(){
+		var div_graph = document.getElementById(this.getAttribute("class"));
+		div_graph.style.background = "green";
+	};
+	div2.onmouseout = function(){
+		var div_graph = document.getElementById(this.getAttribute("class"));
+		div_graph.style.background = "#333";
+	};
+	left.appendChild(div2);
+	grahpic.appendChild(div);
+	div3 = document.createElement("div");
+	div3.innerHTML = month[i];
+	div3.setAttribute("class" , "value");
+	div.appendChild(div3);
+}
+</script>
